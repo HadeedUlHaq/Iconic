@@ -1,0 +1,95 @@
+// header
+#mainheader {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0);
+}
+.menubar {
+  display: none;
+  place-content: center;
+  font-size: 40px;
+  color: #000;
+  cursor: pointer;
+}
+.header {
+  display: grid;
+  grid-template-columns: 100%;
+  position: relative;
+  height: 64px;
+  .logo {
+    width: 200px;
+    transform: translateY(20px);
+    background: #ffff;
+    height: 80px;
+    border-radius: 10px;
+    position: absolute;
+    img {
+      padding: 10px;
+      transform: translateY(-10px);
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: end;
+    ul {
+      border-left: 1px solid #cecece;
+      margin: 12px 0px;
+      &:last-child {
+        margin-left: 18px;
+        li a {
+          color: #ec4e12;
+        }
+      }
+    }
+  }
+  ul li {
+    a {
+      padding: 10px 7px;
+      display: block;
+      font-size: 18px;
+      color: #000000;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover {
+        color: #ec4e12;
+      }
+    }
+    &:first-child a {
+      color: #ec4e12;
+      margin-left: 10px;
+    }
+  }
+}
+// modal-navbar
+.modalnav {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 99;
+  display: none;
+  .close {
+    padding: 10px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      display: block;
+      &:first-child a {
+        color: #ec4e12;
+      }
+      a {
+        padding: 20px 20px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #cecece;
+        font-weight: 600;
+        color: #000000;
+        &:hover {
+          color: #ec4e12;
+        }
+      }
+    }
+  }
+}
