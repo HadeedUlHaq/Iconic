@@ -53,9 +53,15 @@
   }
   #footer-section .footerwrap {
     grid-template-columns: 100%;
+    line-height: 20px;
+    text-align: center;
+    a{
+      font-size: 11px;
+    }
   }
   #footer-section span {
-    justify-content: start;
+    justify-content: center;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 768px) {

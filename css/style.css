@@ -148,6 +148,7 @@ body a {
   grid-template-columns: 30% auto;
   grid-gap: 10px;
   padding: 10px;
+  border-top: 1px solid #efefef;
 }
 .aside-section .asidecontnt .asideimgsec {
   border: 1px solid #cecece;
@@ -368,6 +369,8 @@ section.content article p {
   font-size: 14px;
 }
 #footer-section span {
+  opacity: 0.8;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -439,10 +442,16 @@ section.content article p {
 
   #footer-section .footerwrap {
     grid-template-columns: 100%;
+    line-height: 20px;
+    text-align: center;
+  }
+  #footer-section .footerwrap a {
+    font-size: 11px;
   }
 
   #footer-section span {
-    justify-content: start;
+    justify-content: center;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 768px) {
