@@ -17,7 +17,7 @@
     font-size: 17px;
   }
   #main-section {
-    grid-template-columns: 60% auto;
+    grid-template-columns: 1fr;
   }
   .aside-section .asidecontnt .asidetxt h4 {
     font-size: 13px;
@@ -27,6 +27,7 @@
   }
   .taglinesec h1 {
     font-size: 19px;
+    text-align: center;
   }
   .taglinesec .btnsec a {
     width: 100%;
