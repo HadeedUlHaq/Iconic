@@ -40,11 +40,35 @@ body a {
 }
 .header .logo {
   width: 200px;
-  transform: translateY(20px);
+  transform: translateY(20%);
   background: #ffff;
   height: 80px;
   border-radius: 10px;
   position: absolute;
+}
+.header .logo .curve-edge {
+  position: absolute;
+  z-index: 8;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px 0px 0px 0px;
+  border-left: 10px solid white;
+  border-top: 10px solid white;
+  top: 60%;
+  left: 90%;
+  transform: translate(50%, -50%);
+}
+.header .logo .curve-edge2 {
+  position: absolute;
+  z-index: 8;
+  width: 20px;
+  height: 20px;
+  border-radius: 0px 100px 0px 0px;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+  top: 60%;
+  left: -10%;
+  transform: translate(50%, -50%);
 }
 .header .logo img {
   padding: 10px;
@@ -56,6 +80,7 @@ body a {
 }
 .header nav ul {
   border-left: 1px solid #cecece;
+  border-image: linear-gradient(to top, #fffffF, #cccccc, #ffffff) 1%;
   margin: 12px 0px;
 }
 .header nav ul:last-child {
@@ -85,7 +110,7 @@ body a {
   width: 100%;
   height: 100%;
   background: #ffffff;
-  z-index: 1;
+  z-index: 9;
   display: none;
 }
 .modalnav .close {
@@ -119,6 +144,9 @@ body a {
   display: grid;
   grid-template-columns: 65% auto;
   grid-gap: 20px;
+  padding: 10px 0 10px 0;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #fffffF, #cccccc, #ffffff) 1%;
 }
 #main-section p {
   font-size: 13px;

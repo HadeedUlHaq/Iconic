@@ -16,11 +16,35 @@
   height: 64px;
   .logo {
     width: 200px;
-    transform: translateY(20px);
+    transform: translateY(20%);
     background: #ffff;
     height: 80px;
     border-radius: 10px;
     position: absolute;
+    .curve-edge{
+      position: absolute;
+      z-index: 8;
+      width: 20px;
+      height: 20px;
+      border-radius: 100px 0px 0px 0px;
+      border-left:10px solid white;
+      border-top:10px solid white;
+      top: 60%;
+      left: 90%;
+      transform: translate(50%, -50%);
+    }
+    .curve-edge2{
+      position: absolute;
+      z-index: 8;
+      width: 20px;
+      height: 20px;
+      border-radius: 0px 100px 0px 0px;
+      border-right:10px solid white;
+      border-top:10px solid white;
+      top: 60%;
+      left: -10%;
+      transform: translate(50%, -50%);
+    }
     img {
       padding: 10px;
       transform: translateY(-10px);
@@ -31,6 +55,7 @@
     justify-content: end;
     ul {
       border-left: 1px solid #cecece;
+      border-image: linear-gradient(to top,#fffffF, #cccccc, #ffffff) 1%;
       margin: 12px 0px;
       &:last-child {
         margin-left: 18px;
@@ -64,7 +89,7 @@
   width: 100%;
   height: 100%;
   background: #ffffff;
-  z-index: 1;
+  z-index: 9;
   display: none;
   .close {
     padding: 10px;
